@@ -1,7 +1,7 @@
 export const navItems = [
   { name: "About", link: "#about" },
+  { name: "Experience", link: "#experience" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -9,38 +9,38 @@ export const gridItems = [
   {
     id: 1,
     title: "About me",
-    description: "Laborum ut quis fugiat cillum minim incididunt eu duis cupidatat consequat aute. Commodo consectetur tempor in aliqua eiusmod laborum elit Lorem culpa labore in est eiusmod deserunt. Ut laboris sint ea exercitation esse ex. Sit aute eu magna ipsum. Cupidatat enim occaecat in eiusmod adipisicing est enim. Voluptate pariatur dolor exercitation excepteur tempor aliqua fugiat aute aute enim nulla.  ",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 ",
-    imgClassName: "w-2/3 h-2/3",
-    titleClassName: "",
-    img: "george.png",
+    description: "Hello! I'm Yoshinobu, but I also go by George. Originally from Japan, I'm currently a Computer Science student at the University of California Santa Cruz. I'm passionate about solving automation problems and making processes more efficient. Since high school, I've been fascinated by the power of technology to streamline tasks and improve productivity. I'm also a fast and adaptive learner, accustomed to working in agile environments. I hope you'll explore the rest of my portfolio to learn more about my experiences and skills in the field of Computer Science!",
+    className: "lg:col-span-4 md:col-span-4 md:row-span-1 lg:row-span-1 ",
+    imgClassName: "",
+    titleClassName: "underline",
+    img: "",
     spareImg: "",
   },
   {
     id: 2,
-    title: "Currently studying CS at: ",
+    title: "",
     description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2 justify-center",
+    className: "hidden md:block lg:block lg:col-span-1 md:col-span-2  justify-center",
     imgClassName: "",
     titleClassName: "justify-start",
-    img: "fiat-slug.png",
+    img: "george.png",
     spareImg: "",
   },
   {
     id: 3,
-    title: "My technical skills:",
-    description: "Programming: Python, C/C#/C++, Swift, HTML/CSS, Java/TypeScript (React, Node, Vue), Golang, Dart (Flutter), Bash Databases & Tools: Firebase, MySQL, PostgreSQL, SQLite, Git, Docker, Insomnia, Postman\nSoftware: Notion, Jira, Linux (Ubuntu), Figma, Microsoft Office (Excel, PowerPoint, Word)",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+    title: "Technical Skills",
+    description: " ",
+    className: "lg:col-span-5 md:col-span-3 md:row-span-4",
     imgClassName: "",
-    titleClassName: "justify-center",
+    titleClassName: "underline",
     img: "",
     spareImg: "",
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "A tech enthusiast with a passion for software development, dedicated to leveraging innovative solutions to address social challenges and create impactful, scalable applications",
     description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    className: "lg:col-span-3 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
     img: "",
@@ -50,18 +50,57 @@ export const gridItems = [
     id: 6,
     title: "Let's connect!",
     description: "",
-    className: "lg:col-span-3 md:col-span-3 md:row-span-1 ",
+    className: "lg:col-span-2 md:col-span-2  ",
     imgClassName: "",
-    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
+    titleClassName: "justify-start md:max-w-full max-w-60 text-center",
     img: "",
     spareImg: "",
+  },
+];
+
+export const technicalSkills = [
+  {
+    category: "Programming",
+    items: [
+      "Python",
+      "C/C#/C++",
+      "Swift",
+      "HTML/CSS",
+      "Java/TypeScript (React, Node, Vue)",
+      "Golang",
+      "Dart (Flutter)",
+      "Bash",
+    ],
+  },
+  {
+    category: "Databases & Tools",
+    items: [
+      "Firebase",
+      "MySQL",
+      "PostgreSQL",
+      "SQLite",
+      "Git",
+      "Docker",
+      "Insomnia",
+      "Postman",
+    ],
+  },
+  {
+    category: "Software",
+    items: [
+      "Notion",
+      "Jira",
+      "Linux (Ubuntu)",
+      "Figma",
+      "Microsoft Office (Excel, PowerPoint, Word)",
+    ],
   },
 ];
 
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
+    title: "PDFPal",
     des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
     img: "/p1.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
@@ -69,7 +108,7 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
+    title: "Task Manager App",
     des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
@@ -77,7 +116,7 @@ export const projects = [
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
+    title: "Personal Portfolio",
     des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
     img: "/p3.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
@@ -85,77 +124,28 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
+    title: "Recreating Google's MapReduce",
     des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://github.com/adrianhajdin/iphone",
   },
-];
 
-export const testimonials = [
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-];
-
-export const companies = [
-  {
-    id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
-  },
-  {
-    id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
   {
     id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
+    title: "PlateBuddy",
+    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    img: "/p4.svg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://github.com/adrianhajdin/iphone",
+  },
+  {
+    id: 6,
+    title: "AI Pacman",
+    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    img: "/p4.svg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://github.com/adrianhajdin/iphone",
   },
 ];
 
