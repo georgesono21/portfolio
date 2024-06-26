@@ -14,7 +14,7 @@ export const gridItems = [
     imgClassName: "",
     titleClassName: "underline",
     img: "",
-    spareImg: "",
+    spareImg: "",        
   },
   {
     id: 2,
@@ -47,12 +47,12 @@ export const gridItems = [
       spareImg: "",
     },
   {
-    id: 6,
+    id: 5,
     title: "Let's connect!",
     description: "",
     className: "lg:col-span-2 md:col-span-2  ",
     imgClassName: "",
-    titleClassName: "justify-start md:max-w-full max-w-60 text-center",
+    titleClassName: "text-center underline",
     img: "",
     spareImg: "",
   },
@@ -101,31 +101,31 @@ export const projects = [
   {
     id: 1,
     title: "PDFPal",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    des: "Chat with any PDF!",
     img: "/p1.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://github.com/adrianhajdin?tab=repositories",
+    link: "https://github.com/georgesono21/PDFPal",
   },
   {
     id: 2,
-    title: "Task Manager App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    title: "Task Manager",
+    des: "Real-time Task Management App",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/zoom-clone",
+    link: "https://github.com/georgesono21/taskmanager",
   },
   {
     id: 3,
     title: "Personal Portfolio",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+    des: "What you're currently viewing! A Personal Website.",
     img: "/p3.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/ai_saas_app",
+    link: "https://github.com/georgesono21/portfolio",
   },
   {
     id: 4,
-    title: "Recreating Google's MapReduce",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    title: "MapReduce for WordCount",
+    des: "Recreated Google's MapReduce in C!",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://github.com/adrianhajdin/iphone",
@@ -134,15 +134,15 @@ export const projects = [
   {
     id: 5,
     title: "PlateBuddy",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    des: "For home gym-goers with weird weight increments.",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://github.com/adrianhajdin/iphone",
+    link: "https://github.com/georgesono21/plate-buddy",
   },
   {
     id: 6,
     title: "AI Pacman",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    des: "Using AI techniques to make Pacman think and act like a human.",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://github.com/adrianhajdin/iphone",
@@ -164,33 +164,21 @@ export const workExperience = [
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
-  {
-    id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
-  },
-  {
-    id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
-    className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
-  },
 ];
 
 export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/georgesono21"
   },
   {
     id: 2,
-    img: "/twit.svg",
-  },
-  {
-    id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/yoshinobu-sono/"
+  },
+    {
+    id: 3,
+    img: "/mail.svg",
   },
 ];
