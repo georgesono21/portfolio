@@ -120,7 +120,7 @@ export const projects = [
     title: "Personal Portfolio",
     des: "What you're currently viewing! A Personal Website.",
     img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/c.svg"],
     link: "https://github.com/georgesono21/portfolio",
   },
   {
@@ -128,8 +128,8 @@ export const projects = [
     title: "MapReduce for WordCount",
     des: "Recreated Google's MapReduce in C!",
     img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://github.com/adrianhajdin/iphone",
+    iconLists: ["c.svg", "dock.svg"],
+    link: "https://github.com/georgesono21/mapReduce",
   },
 
   {
@@ -146,7 +146,7 @@ export const projects = [
     des: "Using AI techniques to make Pacman think and act like a human.",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://github.com/adrianhajdin/iphone",
+    link: "https://github.com/georgesono21/ai-pacman",
   },
 ];
 
