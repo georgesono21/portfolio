@@ -1,4 +1,5 @@
 export const navItems = [
+  { name: "Home", link: "#home" },
   { name: "About", link: "#about" },
   { name: "Experience", link: "#experience" },
   { name: "Projects", link: "#projects" },
@@ -152,17 +153,30 @@ export const projects = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
-    className: "md:col-span-2",
+    title: "Full-stack Developer Intern",
+    desc: [
+    "Collaborated closely with the team and management to gather and define MVP requirements, ensuring a comprehensive understanding of desired functionalities and user expectations for the iOS app.",
+    "Implemented user profile viewing and editing functionality for the iOS app using Swift/Xcode, leveraging Firebase (FB) Firestore to fetch and display profile information, allowing users to discover and interact with profiles.",
+    "Developed multi-purpose lookup tables with Swift Generics to optimize data retrieval for posts, users, and chats, resulting in improved app performance, enhanced UX, and cost savings through reduced server load.",
+    "Designed and deployed REST APIs through Firebase functions in JS, aimed at ensuring information security and proper data retrieval while enabling efficient communication between client and backend services.",
+    "Created schema diagrams outlining the proposed schema for posts, users and chats, presenting them to the team to ensure a clear understanding of the project's technical structure and requirements."
+    ],
+    className: "",
     thumbnail: "/exp1.svg",
+    company: "Footsee"
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Tutor/Reader",
+    desc: [
+    "Conducted tutoring sessions to assist an average of 15 students per week in understanding concepts",
+    "Clarified complex topics and answered questions, utilizing effective visual aids and diagrams",
+    "Debugged C++/C code and troubleshooted errors in students' labs, ensuring accurate implementation",
+    "Assisted the professor in grading assignments and exams with accuracy and efficiency, maintaining a grading turnaround time of 48 hours or less"
+],
+    className: "", // change to md:col-span-2
     thumbnail: "/exp2.svg",
+    company: "UCSC Baskin School of Engineering"
   },
 ];
 

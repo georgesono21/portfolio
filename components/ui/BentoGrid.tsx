@@ -1,7 +1,9 @@
+
 import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./BackgroundGradientAnimation";
 import Skills from "../Skills";
 import { socialMedia } from "@/data";
+import DownloadResume from "../DownloadResume";
 
 export const BentoGrid = ({
   className,
@@ -106,21 +108,29 @@ export const BentoGridItem = ({
           </div>
 
           {id == 5 ? (
-          <div className="flex items-center justify-center  gap-10 pt-3">
-            {socialMedia.map((info) => (
-              <div
-                key={info.id}
-                className="w-30 h-30 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180  rounded-lg  "
-              >
-                {info.id == 3 ? 
-                  (<a href = "mailto:yoshinobugeorgesono@gmail.com" target="_blank">
-                    <img src={info.img} alt="icons" width={80} height={80} />
-                  </a>) : (<a href = {info.link} target="_blank">
-                    <img src={info.img} alt="icons" width={60} height={60} />
-                  </a>
-                  )}
-              </div>
-            ))}
+          <div>
+            <div className="flex items-center justify-center  gap-10 pt-3" id="contact">
+              {socialMedia.map((info) => (
+                <div
+                  key={info.id}
+                  className="w-30 h-30 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180  rounded-lg  "
+                >
+                  {info.id == 3 ? 
+                    (<a href = "mailto:yoshinobugeorgesono@gmail.com" target="_blank">
+                      <img src={info.img} alt="icons" width={80} height={80} />
+                    </a>) : (<a href = {info.link} target="_blank">
+                      <img src={info.img} alt="icons" width={60} height={60} />
+                    </a>
+                    )}
+                </div>
+              ))}
+            </div>
+            
+            <div className="pt-5 text-center">
+              <a href="https://firebasestorage.googleapis.com/v0/b/portfolio-9c700.appspot.com/o/Yoshinobu_Sono.pdf?alt=media&token=3b55d7b7-1ebb-4349-b449-1d7aa7284845" target="_blank" className="italic color">
+                View Resume
+              </a>
+            </div>
           </div>
           ) : null }
           
