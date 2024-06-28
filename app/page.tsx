@@ -10,6 +10,7 @@ import { navItems } from "@/data";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import { TracingBeam } from "@/components/ui/TracingBeam";
+import Connect from "@/components/Connect";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
           <Grid/>
           <Experience/>
           <RecentProjects/>
+          <Connect/>
         </TracingBeam>
           <Footer/>
       </div>

@@ -73,9 +73,13 @@ export const BentoGridItem = ({
           )}
         >
           <div className={cn(titleClassName, "font-sans font-bold text-lg lg:text-3xl z-10  pb-2")}>
-            {title}
+            {id == 4 ? (
+              <div>
+                 An eager enthusiastic learner with a passion for <span className="text-purple">software development,</span> dedicated to leveraging  <span className="text-purple">innovative solutions</span> to address <span className="text-purple">social challenges </span>and create <span className="text-purple">impactful, scalable applications.</span>
+              </div>)
+              : title}
           </div>
-          <div className="font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10">
+          <div className="font-sans font-extralight text-[#c1c2d3] text-base md:text-base lg:text-lg z-10">
             {description}
           </div>
 
@@ -107,9 +111,17 @@ export const BentoGridItem = ({
             
           </div>
 
+          {id == 1 ? (
+             <div className="pt-5 text-start">
+              <a href="https://firebasestorage.googleapis.com/v0/b/portfolio-9c700.appspot.com/o/Yoshinobu_Sono.pdf?alt=media&token=3b55d7b7-1ebb-4349-b449-1d7aa7284845" target="_blank" className="italic color">
+                View Resume
+              </a>
+            </div>
+          ) : null}
+
           {id == 5 ? (
           <div>
-            <div className="flex items-center justify-center  gap-10 pt-3" id="contact">
+            <div className="flex items-center justify-center gap-10 pt-3">
               {socialMedia.map((info) => (
                 <div
                   key={info.id}
@@ -126,11 +138,7 @@ export const BentoGridItem = ({
               ))}
             </div>
             
-            <div className="pt-5 text-center">
-              <a href="https://firebasestorage.googleapis.com/v0/b/portfolio-9c700.appspot.com/o/Yoshinobu_Sono.pdf?alt=media&token=3b55d7b7-1ebb-4349-b449-1d7aa7284845" target="_blank" className="italic color">
-                View Resume
-              </a>
-            </div>
+           
           </div>
           ) : null }
           

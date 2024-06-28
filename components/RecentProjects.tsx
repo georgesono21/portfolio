@@ -7,7 +7,7 @@ import { PinContainer } from "./ui/Pin";
 
 const RecentProjects = () => {
   return (
-    <div className="py-20" id = "projects">
+    <div className="" id = "projects">
       <h1 className="heading">
         A selection of my {" "}
         <span className="text-purple">personal and class projects</span>
@@ -22,19 +22,24 @@ const RecentProjects = () => {
               title={item.link}
               href={item.link}
             >
-              <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
-                <div
-                  className="relative w-full h-full overflow-hidden lg:rounded-3xl"
-                  style={{ backgroundColor: "#13162D" }}
-                >
-                  <img src="/bg.png" alt="bgimg" />
-                </div>
+              <a href = {item.link} target = "_blank">
+           <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
+              <div
+                className="relative w-full h-full overflow-hidden lg:rounded-3xl"
+                style={{ backgroundColor: "#13162D" }}
+              >
                 <img
-                  src={item.img}
-                  alt="cover"
-                  className="z-10 absolute bottom-0"
+                  src="/bg.png"
+                  alt="bgimg"
+                  className="absolute inset-0 w-full h-full object-cover"
                 />
               </div>
+              <img
+                src={item.img}
+                alt="cover"
+                className="z-10 absolute rotate-3 p-3"
+              />
+            </div>
 
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
                 {item.title}
@@ -50,7 +55,7 @@ const RecentProjects = () => {
                 {item.des}
               </p>
 
-              <div className="flex items-center justify-between mt-7 mb-3">
+              <div className=" items-center justify-between mt-7 mb-3">
                 <div className="flex items-center">
                   {item.iconLists.map((icon, index) => (
                     <div
@@ -65,15 +70,17 @@ const RecentProjects = () => {
                   ))}
                 </div>
 
-                <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Check Live Site
+                <div className="flex justify-start items-center pt-4">
+                  <p className="flex lg:text-xl md:text-xs text-sm text-purple underline">
+                    Check out on Github
                   </p>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>
               </div>
+              </a>
             </PinContainer>
           </div>
+          
         ))}
       </div>
     </div>
