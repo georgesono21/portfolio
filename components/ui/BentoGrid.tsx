@@ -3,7 +3,6 @@ import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./BackgroundGradientAnimation";
 import Skills from "../Skills";
 import { socialMedia } from "@/data";
-import DownloadResume from "../DownloadResume";
 
 export const BentoGrid = ({
   className,

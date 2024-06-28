@@ -9,10 +9,10 @@ const Connect = () => {
     <div className="w-full flex flex-col items-center justify-center px-4 md:px-10" id = "connect">
       <LampContainer>
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-purple-700 mb-8 pt-3">
-          Let's <span className="text-purple">connect!</span>
+          Let&apos;s <span className="text-purple">connect!</span>
         </h1>
           <p className="text-lg md:text-xl text-start mb-8 max-w-xl mx-auto">
-            Whether you're a recruiter, fellow student, or a software engineer looking to collaborate on a project or ask questions, <span className = "text-purple italic">I'm always open to connect!</span></p>
+            Whether you&apos;re a recruiter, fellow student, or a software engineer looking to collaborate on a project or ask questions, <span className = "text-purple italic">I&apos;m always open to connect!</span></p>
       <div className="flex items-center justify-center gap-10 pt-3">
         {socialMedia.map((info) => (
           <div
