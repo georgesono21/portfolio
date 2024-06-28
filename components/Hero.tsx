@@ -57,7 +57,7 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl">
-            Currently a Senior at UC Santa Cruz studying Computer Science. 
+            Senior at UC Santa Cruz studying Computer Science. 
           </p>
 
           <a href="#about">
