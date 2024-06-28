@@ -10,7 +10,7 @@ const RecentProjects = () => {
     <div className="" id = "projects">
       <h1 className="heading">
         A selection of my {" "}
-        <span className="text-purple">personal and class projects</span>
+        <span className="text-purple">personal/group projects</span>
       </h1>
       <div className="flex flex-wrap gap-12 mt-10 p-4 justify-center">
         {projects.map((item) => (
