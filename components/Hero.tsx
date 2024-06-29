@@ -3,6 +3,8 @@ import { FaLocationArrow } from "react-icons/fa6";
 import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import { FlipWords } from "./ui/FlipWords";
+import { heroDescription } from "@/data";
 
 const Hero = () => {
   return (
@@ -56,9 +58,13 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-8xl"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl">
-            Senior at UC Santa Cruz studying Computer Science. 
-          </p>
+          <div className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl">
+            <FlipWords words = {heroDescription}/>
+          </div>
+
+         
+
+        
 
           <a href="#about">
             <MagicButton

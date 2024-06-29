@@ -9,7 +9,7 @@ const Experience = () => {
   return (
     <div className="mt-20 py-20 w-full" id = "experience">
       <h1 className="heading pb-10">
-        My <span className="text-purple">work experience (so far...)</span>
+        My <span className="text-purple">work experience.</span>
       </h1>
 
       <div className="px-4 placeholder:w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
@@ -34,7 +34,7 @@ const Experience = () => {
             <div className="flex lg:flex-row flex-col p-10  gap-2">
             <div className="lg:ms-5">
               <h1 className="text-start text-xl md:text-2xl font-bold pb-6">
-                {card.title} <span className="text-purple">@ {card.company}</span>
+                {card.title} <br/> <span className="text-purple">@ {card.company}</span>
               </h1>
               <JobDescription info = {card.desc}/>
             </div>

@@ -6,13 +6,15 @@ export const navItems = [
   { name: "Connect", link: "#connect" },
 ];
 
-export const resumeURL = "https://firebasestorage.googleapis.com/v0/b/portfolio-9c700.appspot.com/o/Yoshinobu_Sono_Resume%20(7).pdf?alt=media&token=fbffa986-8396-4f38-81cd-b4be7f7eea32"
+export const resumeURL = "https://firebasestorage.googleapis.com/v0/b/portfolio-9c700.appspot.com/o/Yoshinobu_Sono_Resume%20(8).pdf?alt=media&token=7cf3e54b-497c-4720-a24b-72f72efde923"
 
+
+export const heroDescription = ["An aspiring software engineer.", "Senior at UC Santa Cruz studying Computer Science."]
 export const gridItems = [
   {
     id: 1,
     title: "About me",
-    description: "Hello! I'm Yoshinobu, but I also go by George. Originally from Japan, I'm currently a Computer Science student at the University of California Santa Cruz. I'm passionate about solving automation problems and making processes more efficient. Since high school, I've been fascinated by the power of technology to streamline tasks and improve productivity. I'm also a fast and adaptive learner, accustomed to working in agile environments. I hope you'll explore the rest of my portfolio to learn more about my experiences and skills in the field of Computer Science!",
+    description: "Hello! I'm Yoshinobu, but I also go by George. Originally from Japan, I'm currently a Computer Science student at the University of California Santa Cruz. I'm passionate about solving automation problems and making processes more efficient. Since high school, I've been fascinated by the power of technology to streamline tasks and improve productivity. I'm also a fast and adaptive learner, accustomed to working in agile environments. Feel free to explore the rest of my portfolio to learn more about my experiences and skills in the field of Computer Science!",
     className: "lg:col-span-4 md:col-span-4 md:row-span-1 lg:row-span-1 ",
     imgClassName: "",
     titleClassName: "underline",
@@ -63,42 +65,59 @@ export const gridItems = [
 
 export const technicalSkills = [
   {
-    category: "Programming",
+    category: "Programming Languages",
     items: [
       "Python",
-      "C/C#/C++",
+      "C/C++",
       "Swift",
-      "HTML/CSS",
-      "Java/TypeScript (React, Node, Vue)",
+      "Java/TypeScript",
       "Golang",
-      "Dart (Flutter)",
+      "Dart",
       "Bash",
+      "Haskell",
+      "Assembly"
     ],
   },
   {
-    category: "Databases & Tools",
+    category: "Frameworks & Libraries",
+    items: [
+      "Next.js",
+      "Vue.js",
+      "React.js",
+      "Express.js",
+      "Node.js",
+      "Flutter",
+      "Flask",
+      "NumPy",
+      "Pandas"
+    ],
+  },
+  {
+    category: "Database Management",
     items: [
       "Firebase",
+      "MongoDB Atlas",
       "MySQL",
       "PostgreSQL",
-      "SQLite",
+      "SQLite"
+    ],
+  },
+  {
+    category: "Tools & APIs",
+    items: [
       "Git",
       "Docker",
       "Insomnia",
       "Postman",
-    ],
-  },
-  {
-    category: "Software",
-    items: [
       "Notion",
       "Jira",
-      "Linux (Ubuntu)",
-      "Figma",
-      "Microsoft Office (Excel, PowerPoint, Word)",
+      "Plaid API",
+      "OpenAI API",
+      "Google Cloud"
     ],
   },
 ];
+
 
 export const projects = [
   {
@@ -155,7 +174,7 @@ export const projects = [
 export const workExperience = [
   {
     id: 1,
-    title: "Full-stack Developer Intern",
+    title: "Mobile Application Developer Intern",
     desc: [
     "Collaborated closely with the team and management to gather and define MVP requirements, ensuring a comprehensive understanding of desired functionalities and user expectations for the iOS app.",
     "Implemented user profile viewing and editing functionality for the iOS app using Swift/Xcode, leveraging Firebase (FB) Firestore to fetch and display profile information, allowing users to discover and interact with profiles.",
