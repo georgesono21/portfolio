@@ -2,7 +2,7 @@
 import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./BackgroundGradientAnimation";
 import Skills from "../Skills";
-import { socialMedia } from "@/data";
+import { resumeURL, socialMedia } from "@/data";
 
 export const BentoGrid = ({
   className,
@@ -112,7 +112,7 @@ export const BentoGridItem = ({
 
           {id == 1 ? (
              <div className="pt-5 text-start">
-              <a href="https://firebasestorage.googleapis.com/v0/b/portfolio-9c700.appspot.com/o/Yoshinobu_Sono.pdf?alt=media&token=3b55d7b7-1ebb-4349-b449-1d7aa7284845" target="_blank" className="italic color">
+              <a href={resumeURL} target="_blank" className="italic color">
                 View Resume
               </a>
             </div>

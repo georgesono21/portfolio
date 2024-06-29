@@ -1,6 +1,6 @@
 import React from 'react';
 import { LampContainer } from './ui/Lamp';
-import { socialMedia } from '@/data'; // Assuming you're importing social media data from '@/data'
+import { resumeURL, socialMedia } from '@/data'; // Assuming you're importing social media data from '@/data'
 
 const Connect = () => {
   // Description text
@@ -32,7 +32,7 @@ const Connect = () => {
         ))}
       </div>
 
-      <a href="https://firebasestorage.googleapis.com/v0/b/portfolio-9c700.appspot.com/o/Yoshinobu_Sono.pdf?alt=media&token=3b55d7b7-1ebb-4349-b449-1d7aa7284845" target="_blank" className="italic text-purple pt-3 block text-center">
+      <a href={resumeURL} target="_blank" className="italic text-purple pt-3 block text-center">
         View Resume
       </a>
       </LampContainer>
