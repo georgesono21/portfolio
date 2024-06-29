@@ -6,7 +6,7 @@ export const navItems = [
   { name: "Connect", link: "#connect" },
 ];
 
-export const resumeURL = "https://firebasestorage.googleapis.com/v0/b/portfolio-9c700.appspot.com/o/Yoshinobu_Sono_Resume%20(4).pdf?alt=media&token=c301d02e-fca1-4c13-a52f-3bff35cd0331"
+export const resumeURL = "https://firebasestorage.googleapis.com/v0/b/portfolio-9c700.appspot.com/o/Yoshinobu_Sono_Resume%20(7).pdf?alt=media&token=fbffa986-8396-4f38-81cd-b4be7f7eea32"
 
 export const gridItems = [
   {
