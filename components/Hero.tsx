@@ -8,7 +8,7 @@ import { heroDescription } from "@/data";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36" id = "home">
+    <div className="flex justify-center min-h-screen" id = "home">
       {/**
        *  UI: Spotlights
        *  Link: https://ui.aceternity.com/components/spotlight
@@ -64,7 +64,7 @@ const Hero = () => {
           
           <a href="#about">
             <MagicButton
-              title="Show my Portfolio!"
+              title="View Portfolio"
               icon={<FaLocationArrow />}
               position="right"
             />
