@@ -58,13 +58,9 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-8xl"
           />
 
-          {/* <div className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl">
+          <div className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl " style={{"height":"25px"}}>
             <FlipWords words = {heroDescription}/>
-          </div> */}
-
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl">
-            Senior at UC Santa Cruz studying Computer Science. 
-          </p>
+          </div>
           
           <a href="#about">
             <MagicButton
