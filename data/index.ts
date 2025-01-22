@@ -13,7 +13,7 @@ export const gridItems = [
   {
     id: 1,
     title: "About me",
-    description: "Hello! I'm George (formally, Yoshinobu), and I'm currently a Computer Science student at the University of California, Santa Cruz. I'm passionate about backend software engineering and data management, with a keen interest in distributed systems—particularly in the realm of big data and distributed databases. Having lived in Japan until high school before moving to the United States, my Japanese American background provides me with unique perspectives that shape my approach to technology. Outside of the tech world, I enjoy snowboarding, weightlifting, and playing poker. Feel free to explore the rest of my portfolio to learn more about my experiences and skills in the field of Computer Science!",
+    description: "Hello! I'm George (formally, Yoshinobu), and I'm currently a Computer Science student at the University of California, Santa Cruz. I'm passionate about backend software engineering and data management, with a keen interest in distributed systems—particularly in the realm of big data and distributed databases. Having lived in Japan until the end of high school before moving to the United States, my Japanese American background provides me with unique perspectives that shape my approach to technology. Outside of the tech world, I enjoy snowboarding, weightlifting, and playing poker. Feel free to explore the rest of my portfolio to learn more about my experiences and skills in the field of Computer Science!",
     className: "lg:col-span-4 md:col-span-4 md:row-span-1 lg:row-span-1 ",
     imgClassName: "",
     titleClassName: "underline",
