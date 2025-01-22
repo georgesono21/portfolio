@@ -112,9 +112,9 @@ export const BentoGridItem = ({
 
           {id == 1 ? (
              <div className="pt-5 text-start">
-              <a href={resumeURL} target="_blank" className="italic color">
+              {/* <a href={resumeURL} target="_blank" className="italic color">
                 View Resume
-              </a>
+              </a> */}
             </div>
           ) : null}
 

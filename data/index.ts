@@ -14,7 +14,7 @@ export const gridItems = [
   {
     id: 1,
     title: "About me",
-    description: "Hello! I'm Yoshinobu, but I also go by George. Originally from Japan, I'm currently a Computer Science student at the University of California Santa Cruz. I'm passionate about solving automation problems and making processes more efficient. Since high school, I've been fascinated by the power of technology to streamline tasks and improve productivity. I'm also a fast and adaptive learner, accustomed to working in agile environments. Feel free to explore the rest of my portfolio to learn more about my experiences and skills in the field of Computer Science!",
+    description: "Hello! I'm George (formally, Yoshinobu), and I'm currently a Computer Science student at the University of California, Santa Cruz. I'm passionate about backend software engineering and data management, with a keen interest in distributed systems—particularly in the realm of big data and distributed databases. Having lived in Japan until high school before moving to the United States, my Japanese American background provides me with unique perspectives that shape my approach to technology. Outside of the tech world, I enjoy snowboarding, weightlifting, and playing poker. Feel free to explore the rest of my portfolio to learn more about my experiences and skills in the field of Computer Science!",
     className: "lg:col-span-4 md:col-span-4 md:row-span-1 lg:row-span-1 ",
     imgClassName: "",
     titleClassName: "underline",
@@ -96,6 +96,11 @@ export const technicalSkills = [
     category: "Database Management",
     items: [
       "Firebase",
+      "Opensearch",
+      "DBT",
+      "Mage AI",
+      "Dremio",
+      "Apache Iceberg",
       "MongoDB Atlas",
       "MySQL",
       "PostgreSQL",
@@ -173,29 +178,53 @@ export const projects = [
 
 export const workExperience = [
   {
-    id: 1,
-    title: "Mobile Application Developer Intern",
+    id: 2,
+    title: "Software Engineering Capstone (Industry)",
     desc: [
-    "Collaborated closely with the team and management to gather and define MVP requirements, ensuring a comprehensive understanding of desired functionalities and user expectations for the iOS app.",
-    "Implemented user profile viewing and editing functionality for the iOS app using Swift/Xcode, leveraging Firebase (FB) Firestore to fetch and display profile information, allowing users to discover and interact with profiles.",
-    "Developed multi-purpose lookup tables with Swift Generics to optimize data retrieval for posts, users, and chats, resulting in improved app performance, enhanced UX, and cost savings through reduced server load.",
-    "Designed and deployed REST APIs through Firebase functions in JS, aimed at ensuring information security and proper data retrieval while enabling efficient communication between client and backend services.",
-    "Created schema diagrams outlining the proposed schema for posts, users and chats, presenting them to the team to ensure a clear understanding of the project's technical structure and requirements."
+      "Constructed a log ingestion pipeline on a Kubernetes cluster using Filebeat + Logstash into an OpenSearch cluster, handling an estimated 20GB+ daily and enabling real-time log analysis and search across multiple test categories.",
+      "Developed a second data pipeline utilizing Mage AI, Dremio, and DBT to process over 100+ daily JSON hardware files into a PostgreSQL database, leveraging DBT to transform tables into device-specific models/views.",
+      "Authored efficient SQL queries using psycopg2 to pivot and transform large datasets with over 200,000+ rows into device-specific tabular views, ensuring optimized performance and clarity for analysis.",
+      "Centralized transformed log and hardware data by connecting Dremio into both of the pipelines’ final sources, providing a unified query interface and enabling efficient access and analysis for engineers and analysts."
+    ],
+    className: "",
+    thumbnail: "/newexp2.svg",
+    company: "Nutanix"
+  },
+  {
+    id: 3,
+    title: "Software Engineering Intern",
+    desc: [
+      "Collaborated closely with the team and management to gather and define MVP requirements, ensuring a comprehensive understanding of desired functionalities and user expectations for the iOS app.",
+      "Implemented user profile viewing and editing functionality for the iOS app using Swift/Xcode, leveraging Firebase (FB) Firestore to fetch and display profile information, allowing users to discover and interact with profiles.",
+      "Developed multi-purpose lookup tables with Swift Generics to optimize data retrieval for posts, users, and chats, resulting in improved app performance, enhanced UX, and cost savings through reduced server load.",
+      "Designed and deployed REST APIs through Firebase functions in JS, aimed at ensuring information security and proper data retrieval while enabling efficient communication between client and backend services.",
+      "Created schema diagrams outlining the proposed schema for posts, users and chats, presenting them to the team to ensure a clear understanding of the project's technical structure and requirements."
     ],
     className: "",
     thumbnail: "/exp1.svg",
     company: "Footsee"
   },
+    {
+    id: 1,
+    title: "Full Stack Developer/Student Researcher",
+    desc: [
+      "Developed the onboarding section for Compass, a goal-setting platform built in the Causeway web development learning app, translating Figma mockups into functional components.",
+      "Contributed to the ongoing development of Causeway (a learning platform used by 100+ users) by refining existing features and implementing new components, using Firebase for real-time data management.",
+      "Implemented testing of home and landing pages using the Angular Testing Library to ensure component reliability and code quality."
+    ],
+    className: "",
+    thumbnail: "/newexp1.svg",
+    company: "Tech4Good Lab"
+  },
   {
-    id: 2,
+    id: 4,
     title: "Class Tutor/Reader",
     desc: [
-    "Tutored for CSE101 (Tantalo) for Spring 2023 and CSE13s for Fall 2023 (Pusukuri) and Winter 2024 (Alvaro).",
-    "Conducted tutoring sessions to assist an average of 15 students per week in understanding concepts.",
-    "Clarified complex topics and answered questions, utilizing effective visual aids and diagrams.",
-    "Debugged C++/C code and troubleshooted errors in students' labs, ensuring accurate implementation.",
-    "Assisted the professor in grading assignments and exams with accuracy and efficiency, maintaining a grading turnaround time of 48 hours or less."
-],
+      "Tutored for classes: CSE13S (Fall 2023, Winter 2024), CSE101 (Spring 2023, Fall 2024, Winter 2025), and CSE114A (Winter 2025)",
+      "Conducted tutoring sessions to assist an average of 15 students per week in understanding concepts.",
+      "Clarified complex topics and answered questions, utilizing effective visual aids and diagrams.",
+      "Assisted the professor in grading assignments and exams with accuracy and efficiency, maintaining a grading turnaround time of 48 hours or less."
+    ],
     className: "", // change to md:col-span-2
     thumbnail: "/exp2.svg",
     company: "UCSC Baskin School of Engineering"
