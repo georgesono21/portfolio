@@ -31,10 +31,10 @@ const Connect = () => {
           </div>
         ))}
       </div>
-
+{/* 
       <a href={resumeURL} target="_blank" className="italic text-purple pt-3 block text-center">
         View Resume
-      </a>
+      </a> */}
       </LampContainer>
 
     
